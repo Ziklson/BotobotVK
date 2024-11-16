@@ -28,7 +28,7 @@ class VKBotobotServiceTest {
     private VKBotobotService vkBotobotService;
 
     @Test
-    void testHandleMessage_NoMessage() throws Exception {
+    void testHandleMessage_NoMessage() {
         Map<String, Object> request = new HashMap<>();
 
         request.put("object", new HashMap<>());
@@ -39,7 +39,7 @@ class VKBotobotServiceTest {
     }
 
     @Test
-    void testHandleMessage_Success() throws Exception {
+    void testHandleMessage_Success() {
         Map<String, Object> request = new HashMap<>();
         Map<String, Object> message = new HashMap<>();
         message.put("peer_id", 123L);
